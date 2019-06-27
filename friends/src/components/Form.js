@@ -3,7 +3,7 @@ import './form.css';
 
 const Form = () => {
     return (
-        <div class="form-style-6">
+        <div className="form-style-6">
         <h1>Submit Your Information</h1>
         <form>
         <input type="text" name="field1" placeholder="Name" />
