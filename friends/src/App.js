@@ -46,14 +46,14 @@ class App extends React.Component {
             <Link to="/">Home</Link>
             <Link to="/display">See Friends</Link>
             <Link to="/form">Become a Friend</Link>
-            <Link to="/form">Change a Friend</Link>
+            <Link to="/edit/:id">Change a Friend</Link>
           </div>
         </nav>
         <div className="why">
           <Route path="/" exact render={(props) => <Home {...props} /> } />
           <Route path="/display" render={(props) => <Display {...props} friends={friends} /> } />
           <Route path="/form" render={(props) => <Form {...props} updateFriends={this.updateFriends} /> } />
-          <Route path="/edit" render={(props) => <Edit {...props} friends={friends} updateFriends={this.updateFriends} /> } />
+          <Route path="/edit/:id" render={(props) => <Edit {...props} friends={friends} updateFriends={this.updateFriends} /> } />
           </div>
         </BrowserRouter>
       </div>
