@@ -36,7 +36,6 @@ class App extends React.Component {
 
   render() {
     const { friends } = this.state;
-    console.log("friends", friends);
     return(
       <div className="App">
       <BrowserRouter>
@@ -46,7 +45,6 @@ class App extends React.Component {
             <Link to="/">Home</Link>
             <Link to="/display">See Friends</Link>
             <Link to="/form">Become a Friend</Link>
-            <Link to="/edit/:id">Change a Friend</Link>
           </div>
         </nav>
         <div className="why">
